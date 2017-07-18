@@ -1,0 +1,36 @@
+<!--
+  Generated template for the InserirTextoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Tela Inserir =) </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label color="primary" stacked>Texto</ion-label>
+    <ion-input placeholder="Escreva Algo... " [(ngModel)]="texto"> </ion-input>
+
+  </ion-item>
+  <ion-item>
+    <button ion-button full color="danger" (click)="inserirTexto(texto)">Inserir</button>
+  </ion-item>
+
+  <ion-list>
+    <button ion-item *ngFor="let texto of listaTexto">
+    {{ texto }}
+  </button>
+  </ion-list>
+  
+
+
+
+</ion-content>
